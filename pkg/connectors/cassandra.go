@@ -37,7 +37,7 @@ func (cf *CassandraConnector) Connect() error {
 }
 
 // Fetch fetches schema information from a configured keyspace.
-func (cf *CassandraConnector) Fetch() ([]models.Column, error) {
+func (cf *CassandraConnector) Fetch() ([]models.Metadata, error) {
 	stmt := `SELECT
 		"keyspace_name",
 		"table_name",
@@ -45,8 +45,8 @@ func (cf *CassandraConnector) Fetch() ([]models.Column, error) {
 		"type"
 	FROM system_schema.columns WHERE keyspace_name = ?`
 
-	var columns []models.Column
-	var eg models.Column
+	var columns []models.Metadata
+	var eg models.Metadata
 
 	iter := cf.session.Query(stmt, cf.Keyspace).Iter()
 	for iter.Scan(&eg.Database, &eg.Table, &eg.Column, &eg.Type) {

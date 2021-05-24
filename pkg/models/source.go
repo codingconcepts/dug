@@ -17,5 +17,5 @@ type Source struct {
 // connect to its database and fetch column information.
 type ConnectFetcher interface {
 	Connect() error
-	Fetch() ([]Column, error)
+	Fetch() ([]Metadata, error)
 }
