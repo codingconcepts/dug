@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/codingconcepts/dug/pkg/connectors"
-	"github.com/codingconcepts/dug/pkg/models"
+	"github.com/codingconcepts/oates/pkg/connectors"
+	"github.com/codingconcepts/oates/pkg/models"
 	"gopkg.in/yaml.v2"
 )
 

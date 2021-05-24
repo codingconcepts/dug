@@ -3,7 +3,7 @@ package connectors
 import (
 	"fmt"
 
-	"github.com/codingconcepts/dug/pkg/models"
+	"github.com/codingconcepts/oates/pkg/models"
 	"github.com/gocql/gocql"
 )
 

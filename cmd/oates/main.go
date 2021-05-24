@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/codingconcepts/dug/pkg/parser"
+	"github.com/codingconcepts/oates/pkg/parser"
 )
 
 func main() {

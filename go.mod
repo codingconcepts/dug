@@ -1,4 +1,4 @@
-module github.com/codingconcepts/dug
+module github.com/codingconcepts/oates
 
 go 1.16
 
