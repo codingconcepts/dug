@@ -1,0 +1,8 @@
+sources:
+- name: cassandra_example
+  type: cassandra
+  connector:
+    host: localhost:9042
+    keyspace: my_keyspace
+    username: cassandra
+    password: cassandra
